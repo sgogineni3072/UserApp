@@ -1,9 +1,8 @@
-package com.tmobile.userapp.ui
+package com.tmobile.userapp.framework
 
-import android.content.res.Resources
 import com.tmobile.core.data.models.UserResponse
 
-class UIModelMapper(private val resources: Resources) {
+class UIModelMapper() {
     fun mapNetworkResponseToUIModel(
         userResponse: UserResponse
     ): List<UserUIModel> {

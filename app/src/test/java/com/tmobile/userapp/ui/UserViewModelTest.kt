@@ -2,13 +2,19 @@ package com.tmobile.userapp.ui
 
 import com.nhaarman.mockitokotlin2.verify
 import com.nhaarman.mockitokotlin2.whenever
-import com.tmobile.userapp.db.UserDao
-import com.tmobile.userapp.db.UserEntity
+import com.tmobile.userapp.framework.db.UserDao
+import com.tmobile.userapp.framework.db.UserEntity
 import com.tmobile.core.data.models.Support
 import com.tmobile.core.data.models.User
 import com.tmobile.core.data.models.UserResponse
-import com.tmobile.userapp.network.NetworkResponse
-import com.tmobile.userapp.repositories.api.UserRepository
+import com.tmobile.core.network.NetworkResponse
+import com.tmobile.core.repositories.api.UserRepository
+import com.tmobile.userapp.framework.UIErrorMapper
+import com.tmobile.userapp.framework.UIModelMapper
+import com.tmobile.userapp.framework.UserEvent
+import com.tmobile.userapp.framework.UserUIModel
+import com.tmobile.userapp.framework.UserViewModel
+import com.tmobile.userapp.framework.UserViewState
 import com.tmobile.userapp.tests.TestCoroutineRule
 import com.tmobile.userapp.tests.ViewModelFlowCollector
 import kotlinx.coroutines.Dispatchers

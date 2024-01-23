@@ -1,4 +1,4 @@
-package com.tmobile.userapp.network
+package com.tmobile.core.network
 
 sealed class NetworkResponse<out T : Any> {
     /**

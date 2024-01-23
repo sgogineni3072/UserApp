@@ -1,4 +1,4 @@
-package com.tmobile.userapp.utils
+package com.tmobile.core.utils
 
 import io.ktor.client.features.*
 import io.ktor.util.network.*

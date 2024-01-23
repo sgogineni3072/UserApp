@@ -1,16 +1,15 @@
-package com.tmobile.userapp.di
+package com.tmobile.userapp.framework.di
 
-import com.tmobile.userapp.db.UserDao
-import com.tmobile.userapp.db.UserDatabase
-import com.tmobile.userapp.network.UserDataSource
-import com.tmobile.userapp.network.UserHttpClient
-import com.tmobile.userapp.network.UserService
-import com.tmobile.userapp.repositories.api.UserRepository
-import com.tmobile.userapp.repositories.api.UserRepositoryImpl
-import com.tmobile.userapp.ui.UIErrorMapper
-import com.tmobile.userapp.ui.UIModelMapper
-import com.tmobile.userapp.ui.UserViewModel
-import com.tmobile.userapp.utils.NetworkErrorParser
+import com.tmobile.userapp.framework.db.UserDatabase
+import com.tmobile.core.network.UserDataSource
+import com.tmobile.core.network.UserHttpClient
+import com.tmobile.core.network.UserService
+import com.tmobile.core.repositories.api.UserRepository
+import com.tmobile.core.repositories.api.UserRepositoryImpl
+import com.tmobile.userapp.framework.UIErrorMapper
+import com.tmobile.userapp.framework.UIModelMapper
+import com.tmobile.userapp.framework.UserViewModel
+import com.tmobile.core.utils.NetworkErrorParser
 import kotlinx.coroutines.Dispatchers
 import org.koin.android.ext.koin.androidContext
 import org.koin.androidx.viewmodel.dsl.viewModel
@@ -68,9 +67,7 @@ val appModule = module() {
     }
 
     single {
-        UIModelMapper(
-            resources = androidContext().resources
-        )
+        UIModelMapper()
     }
 
     viewModel {

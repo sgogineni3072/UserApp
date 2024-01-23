@@ -1,4 +1,4 @@
-package com.tmobile.userapp.ui
+package com.tmobile.userapp.presentation
 
 import android.annotation.SuppressLint
 import android.os.Bundle
@@ -6,16 +6,15 @@ import android.util.Log
 import android.widget.ProgressBar
 import android.widget.Toast
 import androidx.activity.ComponentActivity
-import androidx.activity.viewModels
 import androidx.core.view.isVisible
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.tmobile.userapp.R
-import com.tmobile.userapp.db.UserDatabase
-import com.tmobile.userapp.db.ViewModelFactory
-import com.tmobile.userapp.repositories.api.UserRepository
+import com.tmobile.userapp.framework.UserEvent
+import com.tmobile.userapp.framework.UserUIModel
+import com.tmobile.userapp.framework.UserViewModel
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch

@@ -1,4 +1,4 @@
-package com.tmobile.userapp.ui
+package com.tmobile.userapp.framework
 
 import android.content.res.Resources
 import com.tmobile.userapp.R

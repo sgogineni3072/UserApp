@@ -1,13 +1,12 @@
-package com.tmobile.userapp.ui
+package com.tmobile.userapp.framework
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.tmobile.userapp.db.UserDao
-import com.tmobile.userapp.db.UserEntity
-import com.tmobile.userapp.db.mapToEntity
-import com.tmobile.userapp.db.mapToUiModelList
-import com.tmobile.userapp.network.NetworkResponse
-import com.tmobile.userapp.repositories.api.UserRepository
+import com.tmobile.userapp.framework.db.UserDao
+import com.tmobile.userapp.framework.db.mapToEntity
+import com.tmobile.userapp.framework.db.mapToUiModelList
+import com.tmobile.core.network.NetworkResponse
+import com.tmobile.core.repositories.api.UserRepository
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.Flow

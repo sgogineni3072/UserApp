@@ -1,4 +1,4 @@
-package com.tmobile.userapp.network
+package com.tmobile.core.network
 
 import com.tmobile.core.data.models.UserResponse
 import io.ktor.client.HttpClient

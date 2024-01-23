@@ -1,6 +1,5 @@
-package com.tmobile.userapp.network
+package com.tmobile.core.network
 
-import android.util.Log
 import io.ktor.client.*
 import io.ktor.client.engine.cio.*
 import io.ktor.client.features.*
@@ -41,7 +40,7 @@ class UserHttpClient {
         //Print other logs
         install(ResponseObserver) {
             onResponse { response ->
-                Log.d("ApiService", "HTTP status: ${response.status.value}")
+                //Log.d("ApiService", "HTTP status: ${response.status.value}")
             }
         }
 

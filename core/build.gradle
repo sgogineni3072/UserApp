@@ -8,3 +8,12 @@ java {
     targetCompatibility = JavaVersion.VERSION_1_7
 }
 
+dependencies {
+    //Ktor
+    implementation 'io.ktor:ktor-client-gson:1.6.3'
+    //Ktor Engine
+    implementation "io.ktor:ktor-client-cio:1.6.3"
+    //Ktor log response
+    implementation "io.ktor:ktor-client-logging:1.6.1"
+    implementation "ch.qos.logback:logback-classic:1.2.3"
+}

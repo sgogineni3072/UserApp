@@ -1,7 +1,7 @@
-package com.tmobile.userapp.network
+package com.tmobile.core.network
 
 import com.tmobile.core.data.models.UserResponse
-import com.tmobile.userapp.utils.NetworkErrorParser
+import com.tmobile.core.utils.NetworkErrorParser
 
 class UserDataSource(
     private val userService: UserService,

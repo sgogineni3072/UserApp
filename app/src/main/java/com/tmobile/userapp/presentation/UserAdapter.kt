@@ -1,4 +1,4 @@
-package com.tmobile.userapp.ui
+package com.tmobile.userapp.presentation
 
 import android.content.Context
 import android.content.Intent
@@ -14,6 +14,7 @@ import com.bumptech.glide.load.resource.bitmap.FitCenter
 import com.bumptech.glide.load.resource.bitmap.RoundedCorners
 import com.bumptech.glide.request.RequestOptions
 import com.tmobile.userapp.R
+import com.tmobile.userapp.framework.UserUIModel
 
 
 internal class UserAdapter(private val context: Context) :
@@ -30,7 +31,7 @@ internal class UserAdapter(private val context: Context) :
     fun setData(itemsList: List<UserUIModel>) {
         this.itemsList = itemsList
     }
-    @NonNull
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
         val itemView = LayoutInflater.from(parent.context)
             .inflate(R.layout.item_user, parent, false)
@@ -47,7 +48,7 @@ internal class UserAdapter(private val context: Context) :
         Glide.with(context).load(item.avatarUrl)
             .apply(requestOptions)
             .skipMemoryCache(true) // for caching the image url in case phone is offline
-            .into(holder.imageView);
+            .into(holder.imageView)
 
         holder.itemView.setOnClickListener {
             launchUserDetailsActivity(item)

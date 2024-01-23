@@ -1,4 +1,4 @@
-package com.tmobile.userapp.ui
+package com.tmobile.userapp.framework
 
 data class UserUIModel(
     val firstName: String,

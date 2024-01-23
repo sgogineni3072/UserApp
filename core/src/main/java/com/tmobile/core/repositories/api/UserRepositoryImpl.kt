@@ -1,8 +1,8 @@
-package com.tmobile.userapp.repositories.api
+package com.tmobile.core.repositories.api
 
 import com.tmobile.core.data.models.UserResponse
-import com.tmobile.userapp.network.NetworkResponse
-import com.tmobile.userapp.network.UserDataSource
+import com.tmobile.core.network.NetworkResponse
+import com.tmobile.core.network.UserDataSource
 
 class UserRepositoryImpl(
     private val userDataSource: UserDataSource

@@ -1,4 +1,4 @@
-package com.tmobile.userapp.db
+package com.tmobile.userapp.framework.db
 
 import android.content.Context
 import androidx.room.Database

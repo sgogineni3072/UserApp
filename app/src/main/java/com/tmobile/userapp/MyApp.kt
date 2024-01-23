@@ -1,7 +1,7 @@
 package com.tmobile.userapp
 
 import android.app.Application
-import com.tmobile.userapp.di.appModule
+import com.tmobile.userapp.framework.di.appModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.startKoin

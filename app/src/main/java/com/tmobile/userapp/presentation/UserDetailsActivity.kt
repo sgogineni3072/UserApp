@@ -1,4 +1,4 @@
-package com.tmobile.userapp.ui
+package com.tmobile.userapp.presentation
 
 import android.content.Intent
 import android.os.Bundle
@@ -34,6 +34,6 @@ class UserDetailsActivity : ComponentActivity() {
         Glide.with(this).load(intent.getStringExtra("AVATAR_URL"))
             .apply(requestOptions)
             .skipMemoryCache(true) // for caching the image url in case phone is offline
-            .into(avatar);
+            .into(avatar)
     }
 }
